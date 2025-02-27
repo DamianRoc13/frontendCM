@@ -54,7 +54,7 @@ select:focus {
 
 button {
     background: #f0ad4e;
-    color: white;
+    color: #1e1e1e;
     padding: 10px 20px;
     border: none;
     border-radius: 5px;
@@ -65,7 +65,7 @@ button {
 
 button:hover {
     background: #ce9443;
-    transform: scale(1.05); /* Agregar un pequeño aumento de tamaño */
+    transform: scale(1.05); 
 }
 
 #resultado {
@@ -75,8 +75,8 @@ button:hover {
     background: #333;
     color: white;
     font-size: 14px;
-    overflow-y: auto; /* Permite desplazamiento vertical */
-    max-height: 200px; /* Ajusta este valor según el tamaño que prefieras */
+    overflow-y: auto; 
+    max-height: 200px; 
 }
 
 .logo {
@@ -115,18 +115,18 @@ button:hover {
 #mensaje {
     font-size: 18px;
     font-weight: bold;
-    color: #f0ad4e; /* Color vibrante para el texto */
-    text-transform: uppercase; /* Poner el texto en mayúsculas */
+    color: #f0ad4e; 
+    text-transform: uppercase; 
     margin: 0;
     display: inline-block;
     padding: 5px;
     border-radius: 5px;
-    background-color: rgba(255, 255, 255, 0.2); /* Fondo suave */
-    box-shadow: 0 0 8px rgba(0, 0, 0, 0.2); /* Sombra para resaltar el mensaje */
+    background-color: rgba(255, 255, 255, 0.2); 
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.2); 
 }
 
 #rutaArchivo {
     font-size: 14px;
-    color: #d9534f; /* Color del archivo */
+    color:rgb(255, 255, 255); 
     margin-top: 10px;
 }

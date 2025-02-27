@@ -8,7 +8,7 @@ document.getElementById("consultarBtn").addEventListener("click", function() {
 
     let resultadoDiv = document.getElementById("resultado");
     
-    // Mostrar mensaje de "Realizando consulta..."
+    
     if (tipoConsulta === "PLACA" || tipoConsulta === "RUC" || tipoConsulta === "CEDULA-EX" || tipoConsulta === "CEDULA-IN") {
         mensaje.innerText = "Realizando consulta...";
     }
@@ -26,9 +26,9 @@ document.getElementById("consultarBtn").addEventListener("click", function() {
                 rutaArchivo.innerText = "";
             }
 
-            setTimeout(() => {  // Ocultar el mensaje de consulta después de mostrar los resultados
+            setTimeout(() => {  
                 mensaje.innerText = "";
-            }, 3000); // Desaparece después de 3 segundos
+            }, 3000); 
 
             document.getElementById("loadingIcon").classList.add("hidden");
         })
@@ -47,7 +47,7 @@ document.getElementById("unificarExcelBtn").addEventListener("click", function()
     let rutaArchivo = document.getElementById("rutaArchivo");
     let resultadoDiv = document.getElementById("resultado");
 
-    // Mostrar mensaje de "Unificando consultas..."
+    
     mensaje.innerText = "Unificando consultas...";
     resultadoDiv.classList.remove("hidden");
 
@@ -62,9 +62,9 @@ document.getElementById("unificarExcelBtn").addEventListener("click", function()
                 rutaArchivo.innerText = "";
             }
 
-            setTimeout(() => {  // Ocultar el mensaje de unificación después de mostrar los resultados
+            setTimeout(() => {  
                 mensaje.innerText = "";
-            }, 3000); // Desaparece después de 3 segundos
+            }, 3000); 
 
             document.getElementById("loadingIcon").classList.add("hidden");
         })
