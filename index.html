@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consultor de Información</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>Consultor de Información</h1>
+        
+        <label for="tipoConsulta">Selecciona el tipo de consulta:</label>
+        <select id="tipoConsulta">
+            <option value="PLACA">Placas</option>
+            <option value="RUC">RUC</option>
+            <option value="CEDULA-EX">Cédula Externa</option>
+            <option value="CEDULA-IN">Cédula Interna</option>
+        </select>
+
+        <button id="consultarBtn">Realizar Consulta</button>
+
+        <div id="resultado" class="hidden">
+            <p id="mensaje"></p>
+            <p id="rutaArchivo"></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
