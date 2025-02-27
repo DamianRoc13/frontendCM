@@ -19,8 +19,8 @@ document.getElementById("consultarBtn").addEventListener("click", function() {
         .then(response => response.json())
         .then(data => {
             if (data.success) {
-                mensaje.innerText = "✅ Consulta realizada correctamente!";
-                rutaArchivo.innerText = `📂 ${data.rutaArchivo}`;
+                mensaje.innerText = "Consulta realizada correctamente!";
+                rutaArchivo.innerText = `${data.rutaArchivo}`;
             } else {
                 mensaje.innerText = "❌ Error en la consulta: " + data.error;
                 rutaArchivo.innerText = "";
@@ -55,8 +55,8 @@ document.getElementById("unificarExcelBtn").addEventListener("click", function()
         .then(response => response.json())
         .then(data => {
             if (data.success) {
-                mensaje.innerText = "✅ Archivos unificados correctamente!";
-                rutaArchivo.innerText = `📂 ${data.rutaArchivo}`;
+                mensaje.innerText = "Archivos unificados correctamente!";
+                rutaArchivo.innerText = `${data.rutaArchivo}`;
             } else {
                 mensaje.innerText = "❌ Error en la unificación: " + data.error;
                 rutaArchivo.innerText = "";

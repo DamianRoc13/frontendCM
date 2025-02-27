@@ -24,6 +24,7 @@ body {
 h1 {
     font-size: 24px;
     margin-bottom: 20px;
+    color: #f0ad4e;
 }
 
 label {
@@ -31,6 +32,7 @@ label {
     font-weight: bold;
     display: block;
     margin-bottom: 10px;
+    color: #f0ad4e;
 }
 
 select {
@@ -46,12 +48,12 @@ select {
 
 select:focus {
     outline: none;
-    border-color: #007bff; 
+    border-color: #f0ad4e; 
 }
 
 
 button {
-    background: #007bff;
+    background: #f0ad4e;
     color: white;
     padding: 10px 20px;
     border: none;
@@ -62,7 +64,7 @@ button {
 }
 
 button:hover {
-    background: #0056b3;
+    background: #ce9443;
     transform: scale(1.05); /* Agregar un pequeño aumento de tamaño */
 }
 
@@ -77,7 +79,10 @@ button:hover {
     max-height: 200px; /* Ajusta este valor según el tamaño que prefieras */
 }
 
-
+.logo {
+    width: 50px;
+    margin: 0 auto 20px;
+}
 .hidden {
     display: none;
 }
@@ -90,4 +95,38 @@ button:hover {
 
 #loadingIcon {
     margin-right: 10px;
+}
+
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+#resultado .animado {
+    animation: fadeInUp 0.5s ease-in-out;
+}
+
+#mensaje {
+    font-size: 18px;
+    font-weight: bold;
+    color: #f0ad4e; /* Color vibrante para el texto */
+    text-transform: uppercase; /* Poner el texto en mayúsculas */
+    margin: 0;
+    display: inline-block;
+    padding: 5px;
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.2); /* Fondo suave */
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.2); /* Sombra para resaltar el mensaje */
+}
+
+#rutaArchivo {
+    font-size: 14px;
+    color: #d9534f; /* Color del archivo */
+    margin-top: 10px;
 }
