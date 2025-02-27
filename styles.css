@@ -1,20 +1,25 @@
 body {
     font-family: Arial, sans-serif;
-    background: linear-gradient(to right, #2193b0, #6dd5ed);
+    background: url('assets/fondo.webp') no-repeat center center fixed;
+    background-size: cover;
     text-align: center;
     padding: 50px;
-    color: white;
+    color: rgb(255, 255, 255);
 }
 
+
 .container {
-    background: white;
-    color: black;
+    background: #1e1e1e; 
+    color: #ffffff; 
     padding: 30px;
     border-radius: 10px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
     max-width: 400px;
     margin: auto;
 }
+
+
+
 
 h1 {
     font-size: 24px;
@@ -31,11 +36,19 @@ label {
 select {
     width: 100%;
     padding: 10px;
-    border: 1px solid #ccc;
+    border: 1px solid #555; 
     border-radius: 5px;
     font-size: 16px;
     margin-bottom: 20px;
+    background: #2a2a2a; 
+    color: white; 
 }
+
+select:focus {
+    outline: none;
+    border-color: #007bff; 
+}
+
 
 button {
     background: #007bff;
@@ -60,7 +73,15 @@ button:hover {
     margin-top: 20px;
     padding: 15px;
     border-radius: 5px;
-    background: #f4f4f4;
-    color: black;
+    background: #333; 
+    color: white;
     font-size: 14px;
+}
+
+.hidden {
+    display: none;
+}
+
+#loadingIcon {
+    margin-right: 10px;
 }

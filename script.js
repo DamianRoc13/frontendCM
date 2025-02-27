@@ -1,4 +1,7 @@
 document.getElementById("consultarBtn").addEventListener("click", function() {
+    document.getElementById("loadingIcon").classList.remove("hidden");
+
+    document.getElementById("resultado").classList.add("hidden");
     let tipoConsulta = document.getElementById("tipoConsulta").value;
 
     fetch(`http://127.0.0.1:5000/realizar-consulta?tipoConsulta=${tipoConsulta}`)
@@ -10,16 +13,18 @@ document.getElementById("consultarBtn").addEventListener("click", function() {
 
             if (data.success) {
                 mensaje.innerText = "✅ Consulta realizada correctamente!";
-                rutaArchivo.innerText = `📂 Archivo guardado en: ${data.rutaArchivo}`;
+                rutaArchivo.innerText = `📂 ${data.rutaArchivo}`;
             } else {
                 mensaje.innerText = "❌ Error en la consulta: " + data.error;
                 rutaArchivo.innerText = "";
             }
 
             resultadoDiv.classList.remove("hidden");
+            document.getElementById("loadingIcon").classList.add("hidden");
         })
         .catch(error => {
             alert("Error en la conexión con el servidor.");
             console.error("Error:", error);
+            document.getElementById("loadingIcon").classList.add("hidden");
         });
 });
