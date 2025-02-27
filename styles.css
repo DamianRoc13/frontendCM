@@ -14,7 +14,7 @@ body {
     padding: 30px;
     border-radius: 10px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
-    max-width: 400px;
+    max-width: 500px;
     margin: auto;
 }
 
@@ -58,25 +58,31 @@ button {
     border-radius: 5px;
     cursor: pointer;
     font-size: 16px;
-    transition: background 0.3s;
+    transition: background 0.3s, transform 0.3s;
 }
 
 button:hover {
     background: #0056b3;
-}
-
-.hidden {
-    display: none;
+    transform: scale(1.05); /* Agregar un pequeño aumento de tamaño */
 }
 
 #resultado {
     margin-top: 20px;
     padding: 15px;
     border-radius: 5px;
-    background: #333; 
+    background: #333;
     color: white;
     font-size: 14px;
+    overflow-y: auto; /* Permite desplazamiento vertical */
+    max-height: 200px; /* Ajusta este valor según el tamaño que prefieras */
 }
+
+
+.hidden {
+    display: none;
+}
+
+
 
 .hidden {
     display: none;
